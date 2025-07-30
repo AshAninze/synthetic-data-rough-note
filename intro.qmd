@@ -1,0 +1,37 @@
+# Introduction
+
+## The Challenge of Healthcare Data
+
+* Real patient data is sensitive and highly restricted.
+* This makes sharing and collaboration difficult.
+* The NHP model is open source, but the data is a blocker.
+
+---
+
+## Why Synthetic Data?
+
+* **Privacy:** Protects patient confidentiality.
+* **Accessibility:** Enables broader research and testing.
+* **Reproducibility:** Allows anyone to run and verify the model.
+* **Bias Mitigation:** Opportunity to create fairer datasets.
+
+
+# Current NHS Artificial Data Limitations
+
+## Problem: Lost Relationships
+
+* The existing NHS artificial data excels at privacy.
+* However, it struggles to preserve complex relationships between attributes.
+* **Example:** It might tell you "how many 49-year-olds" and "how many females," but not "how many 49-year-old females with diabetes in a specific postcode."
+
+---
+
+## Impact on NHP Model
+
+* NHP model relies on multivariate relationships for accurate demand prediction.
+* Without these, models trained on current artificial data would be inaccurate.
+* Obstacle to identifying which patients are candidates for a mitigator.
+
+## The Consequence 
+
+* The **inability to simulate real-world** interventions makes the output for demand prediction **unreliable** and **invalid**. 
