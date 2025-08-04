@@ -16,7 +16,7 @@ The NHP demand prediction model is a critical tool for strategic healthcare plan
 This project aims to:
 
 1.  **Evaluate existing synthetic/artificial data approaches**, specifically assessing their ability to preserve complex multivariate relationships that are important for healthcare demand modeling.
-2.  **Research and evaluate advanced synthetic data generation techniques** for advanced synthetic data generation techniques (e.g., GANs) that can effectively mimic the statistical properties and intercolumn relationships of real NHP data.
+2.  **Enhance the existing artificial HES dataset by creating relationships**, so it can be used on the demand model to effectively assign mitigators.
 4.  **Produce a comprehensive scoping document/presentation** detailing the findings, comparing different approaches, outlining their pros and cons, and providing clear recommendations for future full scale implementation.
 5.  **Enable true open-source collaboration** for the NHP model by facilitating reproducible testing and analysis without privacy concerns.
 
@@ -32,7 +32,7 @@ This project aims to:
 ├── .gitignore                                  # Git ignore rules
 ├── _quarto.yml                                 # Main Quarto project configuration
 ├── README.md                                   # This overview document
-└── synthetic-data-rough-note.qmd                # The primary Quarto document/report
+└── synthetic-data-rough-note.qmd               # The primary Quarto document/report
 
 ```
 
