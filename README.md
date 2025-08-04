@@ -9,7 +9,7 @@ The project's key findings and methodological insights are documented through **
 
 ## Problem Statement
 
-The NHP demand prediction model is a critical tool for strategic healthcare planning. While its source code aims to be open, its usability for external researchers, collaborators, and even internal testing is limited by the inability to share the sensitive real patient data. Existing artificial data solutions provided by NHS England currently lack the necessary statistical relationships and complexity to accurately represent real world patient cohorts and their interactions. As a result, it is difficult to meaningfully evaluate the model or perform a thorough analysis. 
+The NHP demand prediction model is a tool for strategic healthcare planning. While its source code aims to be open, its usability for external researchers, collaborators, and even internal testing is limited by the inability to share the sensitive real patient data. Existing artificial data solutions provided by NHS England currently lack the necessary statistical relationships and complexity to accurately represent real world patient cohorts and their interactions. As a result, it is difficult to meaningfully evaluate the model or perform a thorough analysis. 
 
 ## Objectives
  
