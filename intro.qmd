@@ -35,3 +35,11 @@
 ## The Consequence 
 
 * The **inability to simulate real-world** interventions makes the output for demand prediction **unreliable** and **invalid**. 
+
+# The Solution 
+
+## My Project's Approach 
+
+*Use the existing HES artificial data.
+*Enhance the artificial data by creating relationships needed for the NHP model.
+*This will create a useable dataset for demand prediction and for the effective assignment of mitigators 
