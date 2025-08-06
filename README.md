@@ -15,7 +15,7 @@ The NHP demand prediction model is a critical tool for strategic healthcare plan
  
 This project aims to:
 
-1.  **Evaluate existing synthetic/artificial data approaches**, specifically assessing their ability to preserve complex multivariate relationships that are important for healthcare demand modeling.
+1.  **Evaluate existing synthetic/artificial data approaches**, specifically assessing their ability to preserve complex multivariate relationships that are important for healthcare demand modelling.
 2.  **Enhance the existing artificial HES dataset by creating relationships**, so it can be used on the demand model to effectively assign mitigators.
 4.  **Produce a comprehensive scoping document/presentation** detailing the findings, comparing different approaches, outlining their pros and cons, and providing clear recommendations for future full scale implementation.
 5.  **Enable true open-source collaboration** for the NHP model by facilitating reproducible testing and analysis without privacy concerns.
