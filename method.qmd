@@ -16,16 +16,15 @@ The project will use the existing, non-disclosive 10,000-row artificial HES data
 
 The process for enhancing the artificial dataset will follow these key steps:
 
-1.  **Initial Data Validation:** The project began by validating the current state of the artificial data. A correlation matrix was generated in Python, which confirmed the absence of meaningful linear relationships between numerical attributes, thereby justifying the need for this enhancement project.
+1.  **Initial Data Validation:** The project began by validating the current state of the artificial data. A correlation matrix was generated in Python, which confirmed the lack of meaningful linear relationships between numerical attributes, thereby justifying the need for this enhancement project.
 
 ---
 
-2.  **Relationship Identification:** Based on the requirements of the NHP demand model, a defined set of key intercolumn relationships will be identified. These are the specific relationships that are crucial for the model's accuracy and for the assignment of mitigators.
+2.  **Relationship Identification:** Based on the requirements of the NHP demand model, a defined set of key inter-column relationships will be identified. These are the specific relationships that are crucial for the model's accuracy and for the assignment of mitigators.
 
 ---
 
-3.  **Data Enhancement:** Using Python and the Pandas library, a script will be developed to systematically inject the identified relationships into the artificial dataset. This will involve manipulating existing attributes to create new dependencies that mimic a realistic dataset.
-
+3.  **Data Enhancement:** Using Python and the Pandas library, a script will be developed to create realistic relationships into the artificial dataset.
 ---
 
 4.  **Output and Validation:** The final output will be an enhanced artificial HES dataset. This dataset will be validated to confirm that the newly created relationships are present while also ensuring the data remains non-disclosive and suitable for the open-source NHP model.
