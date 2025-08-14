@@ -25,7 +25,7 @@ This project aims to:
 
 ```
 .
-├── notebooks/                                  # Jupyter notebooks for analysis
+├── notebooks/                                  # Folder containing Quarto files
 ├── scripts/                                    # Reusable Python scripts
 ├── _extensions/                                # Quarto theme
 ├── data/                                       # Placeholder for data files
