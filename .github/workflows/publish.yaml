@@ -15,11 +15,14 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        
-      - name: Render and Publish
+
+      - name: Render Document
+        run: quarto render notebooks/synthetic-data-rough-note.qmd --output-dir docs
+
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          path: notebooks/synthetic-data-rough-note.qmd
+          path: docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
