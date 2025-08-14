@@ -152,7 +152,7 @@
 <ul>
 <li>Real patient data is sensitive and highly restricted.</li>
 <li>This makes sharing and collaboration difficult.</li>
-<li>The NHP model is open source, but the data is a blocker.</li>
+<li>The NHP model is open source, but the data is not.</li>
 </ul>
 </section>
 <section id="why-synthetic-data" class="slide level2">
@@ -161,7 +161,7 @@
 <li><strong>Privacy:</strong> Protects patient confidentiality.</li>
 <li><strong>Accessibility:</strong> Enables broader research and testing.</li>
 <li><strong>Reproducibility:</strong> Allows anyone to run and verify the model.</li>
-<li><strong>Bias Mitigation:</strong> Opportunity to create fairer datasets.</li>
+<li><strong>Bias Mitigation:</strong> Opportunity to create fairer datasets. Biased data leads to biased models.</li>
 </ul>
 </section></section>
 <section>
@@ -183,25 +183,23 @@
 <li>NHP model relies on multivariate relationships for accurate demand prediction.</li>
 <li>Without these, models trained on current artificial data would be inaccurate.</li>
 <li>Obstacle to identifying which patients are candidates for a mitigator.</li>
-</ul>
-</section>
-<section id="the-consequence" class="slide level2">
-<h2>The Consequence</h2>
-<ul>
 <li>The <strong>inability to simulate real-world</strong> interventions makes the output for demand prediction <strong>unreliable</strong> and <strong>invalid</strong>.</li>
 </ul>
-</section></section>
-<section>
-<section id="the-solution" class="title-slide slide level1 center">
-<h1>The Solution</h1>
-
 </section>
-<section id="my-projects-approach" class="slide level2">
-<h2>My Project’s Approach</h2>
+<section id="my-internship-project" class="slide level2">
+<h2>My Internship Project</h2>
+<p>This presentation will cover</p>
 <ul>
-<li>Use the existing Hospital Episode Statistics HES artificial data.</li>
-<li>Enhance the artificial data by creating relationships needed for the NHP model.</li>
-<li>This will create a useable dataset for demand prediction and for the effective assignment of mitigators.</li>
+<li><strong>The Problem:</strong> The limitations of the current NHS artificial data.</li>
+<li><strong>The Solution:</strong> The methodology I developed to inject realistic relationships.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li><strong>The Results:</strong> The enhanced dataset and a correlation matrix to visualise the data.</li>
+<li><strong>The Impact:</strong> The value this new data brings to the NHP model.</li>
+<li><strong>What Could Have Been Done Better:</strong> An exploration of advanced techniques like Generative Adversarial Networks (GANs).</li>
 </ul>
 </section></section>
 <section>
@@ -212,49 +210,99 @@
 <section id="approach" class="slide level2">
 <h2>Approach</h2>
 <ul>
-<li>This project will use a data enhancement methodology to address the limitations of the existing artificial HES data.</li>
+<li>This project will use a rule-based data synthesis approach to address the limitations of the existing artificial HES data.</li>
 <li>Rather than generating a new dataset from scratch, the approach is to add relationships to the existing 10,000-row artificial dataset.</li>
-<li>This provides a practical solution that is capable of being done within the project timeline and stands by the requirement of not using real HES data.</li>
+<li>This provides a practical solution that fits within the project timeline and adheres to the requirement of not using real HES data.</li>
 </ul>
 </section>
-<section class="slide level2">
-
-<h3 id="input-data">Input Data</h3>
-<p>The project will use the existing, non-disclosive 10,000-row artificial HES dataset created by NHS England.</p>
+<section id="input-data" class="slide level2">
+<h2>Input Data</h2>
+<ul>
+<li>The project will use the existing, non-disclosive A&amp;E 10,000-row artificial HES dataset created by NHS England.</li>
+<li>The dataset consists of 10,000 rows and 165 attributes.</li>
+<li>The dataset includes a variety of attributes related to emergency care.</li>
+</ul>
 </section>
-<section id="process" class="slide level2">
-<h2>Process</h2>
-<p>The process for enhancing the artificial dataset will follow these key steps:</p>
-<ol type="1">
-<li><strong>Initial Data Validation:</strong> The project began by generating a correlation matrix in Python to confirm the lack of meaningful linear relationships between numerical attributes. This step provided the clear justification for the data enhancement.</li>
-</ol>
+<section id="key-columns-used-in-this-project" class="slide level2">
+<h2>Key columns used in this project</h2>
+<ul>
+<li><strong>AEATTENDDISP:</strong> The patient’s discharge status.</li>
+<li><strong>AEARRIVALMODE:</strong> How the patient arrived at the facility.</li>
+<li><strong>DIAG3_01:</strong> The patient’s primary diagnosis.</li>
+<li><strong>SEX:</strong> The patient’s gender.</li>
+</ul>
+</section></section>
+<section>
+<section id="process" class="title-slide slide level1 center">
+<h1>Process</h1>
+<p>The process for enhancing the artificial dataset followed these steps</p>
+</section>
+<section id="initial-data-validation" class="slide level2">
+<h2>Initial Data Validation</h2>
+<p>The project began by generating a correlation matrix in Python to confirm the lack of meaningful linear relationships between numerical attributes. This step provided the clear justification for the data enhancement.</p>
 </section>
 <section class="slide level2">
 
 
 <img data-src="../images/bf.png" class="r-stretch quarto-figure-center"><p class="caption">The Data Before Data Injection</p></section>
-<section class="slide level2">
-
-<ol start="2" type="1">
-<li><strong>Relationship Identification:</strong> Based on the requirements of the NHP demand model, a defined set of key inter-column relationships will be identified. These are the specific relationships that are crucial for the model’s accuracy and for the assignment of mitigators.</li>
-</ol>
+<section id="relationship-identification-enhancement" class="slide level2">
+<h2>Relationship Identification &amp; Enhancement</h2>
+<p>Based on the requirements of the NHP demand model, two key inter-column relationships were identified:</p>
+<ul>
+<li>An Ambulance Rule: If AEARRIVALMODE is 1 (arrival by ambulance), then AEATTENDDISP is set to 1 (hospital bed).</li>
+<li>A Female Rule: If DIAG3_01 is 28 (Obstetric conditions) or 29 (Gynaecological conditions), then SEX is set to 2 (female).</li>
+<li>Using Python and the Pandas library, a script was developed to create realistic relationships in the artificial dataset</li>
+</ul>
+</section>
+<section id="output-validation" class="slide level2">
+<h2>Output &amp; Validation</h2>
+<p>The final output will be an enhanced artificial HES dataset. The dataset was validated to confirm that the newly created relationships were present by generating a new correlation matrix.This confirms that the newly created relationships are present while also ensuring the data remains non-disclosive and suitable for the open-source NHP model.</p>
 </section>
 <section class="slide level2">
 
-<ol start="3" type="1">
-<li><p><strong>Data Enhancement:</strong> Using Python and the Pandas library, a script will be developed to create realistic relationships into the artificial dataset.</p></li>
-<li><p><strong>Output and Validation:</strong> The final output will be an enhanced artificial HES dataset. This dataset will be validated to confirm that the newly created relationships are present while also ensuring the data remains non-disclosive and suitable for the open-source NHP model.</p></li>
-</ol>
+
+<img data-src="../images/af.png" class="r-stretch quarto-figure-center"><p class="caption">The Data After Data Injection</p></section>
+<section id="the-results" class="slide level2">
+<h2>The Results</h2>
+<p><strong>Before:</strong></p>
+<p><em>The initial correlation matrix showed no meaningful relationships. </em>This confirmed the need for data enhancement.</p>
+<p><strong>After:</strong></p>
+<p><em>The new correlation matrix confirms that the rules successfully injected relationships. </em>The correlation values for the target columns have significantly increased.</p>
+</section></section>
+<section>
+<section id="conclusion" class="title-slide slide level1 center">
+<h1>Conclusion</h1>
+
+</section>
+<section id="summary-of-findings" class="slide level2">
+<h2>Summary of Findings</h2>
+<ul>
+<li><strong>The Problem:</strong> The existing NHS artificial data, while great for privacy, was not suitable for the NHP model due to a lack of meaningful relationships between attributes.</li>
+<li><strong>The Solution:</strong> A rule-based data synthesis approach was used to inject two rules, successfully creating these relationships.</li>
+</ul>
 </section>
 <section class="slide level2">
 
+<ul>
+<li><strong>The Result:</strong> The enhanced dataset was validated to confirm the new relationships, making it a reliable and non-disclosive resource for the NHP model.</li>
+<li><strong>The Impact:</strong> This work enables the NHP model to produce more accurate demand predictions and provides a foundation for identifying which patients are candidates for a mitigator.</li>
+</ul>
+</section>
+<section id="future-works" class="slide level2">
+<h2>Future Works</h2>
+<p>While the rule-based approach was a practical and effective solution, future work could explore using Generative Adversarial Networks (GANs).</p>
+<ul>
+<li>GANs can learn more complex, non-linear relationships that a rule-based system would miss, creating an even more realistic synthetic dataset.</li>
+</ul>
+</section></section>
+<section id="any-questions" class="title-slide slide level1 center">
+<h1>Any Questions?</h1>
 
-
-<img data-src="../images/af.png" class="r-stretch quarto-figure-center"><p class="caption">The Data After Data Injection</p></section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>View slides <a href="https://aiwithash.me/synthetic-data-rough-note/#/title-slide">here</a></p>
+<p>The slides are available publicly <a href="https://aiwithash.me/synthetic-data-rough-note/#/title-slide">here</a></p>
 </div>
 </div></div>
 
