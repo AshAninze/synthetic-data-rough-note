@@ -1,10 +1,11 @@
 # Introduction
 
+
 ## The Challenge of Healthcare Data
 
 * Real patient data is sensitive and highly restricted.
 * This makes sharing and collaboration difficult.
-* The NHP model is open source, but the data is a blocker.
+* The NHP model is open source, but the data is not.
 
 ---
 
@@ -13,7 +14,7 @@
 * **Privacy:** Protects patient confidentiality.
 * **Accessibility:** Enables broader research and testing.
 * **Reproducibility:** Allows anyone to run and verify the model.
-* **Bias Mitigation:** Opportunity to create fairer datasets.
+* **Bias Mitigation:** Opportunity to create fairer datasets. Biased data leads to biased models. 
 
 
 # Current NHS Artificial Data Limitations
@@ -31,15 +32,17 @@
 * NHP model relies on multivariate relationships for accurate demand prediction.
 * Without these, models trained on current artificial data would be inaccurate.
 * Obstacle to identifying which patients are candidates for a mitigator.
-
-## The Consequence 
-
 * The **inability to simulate real-world** interventions makes the output for demand prediction **unreliable** and **invalid**. 
 
-# The Solution 
+## My Internship Project
 
-## My Project's Approach 
+This presentation will cover
 
-* Use the existing Hospital Episode Statistics HES artificial data.
-* Enhance the artificial data by creating relationships needed for the NHP model.
-* This will create a useable dataset for demand prediction and for the effective assignment of mitigators.
+* **The Problem:** The limitations of the current NHS artificial data.
+* **The Solution:** The methodology I developed to inject realistic relationships.
+
+---
+
+* **The Results:** The enhanced dataset and a correlation matrix to visualise the data.
+* **The Impact:** The value this new data brings to the NHP model.
+* **What Could Have Been Done Better:** An exploration of advanced techniques like Generative Adversarial Networks (GANs).

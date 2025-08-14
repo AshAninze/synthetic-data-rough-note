@@ -11,6 +11,8 @@ format: su-theme-revealjs
 
 {{< include method.qmd >}}
 
+{{< include conclusion.qmd >}}
+
 
 
 

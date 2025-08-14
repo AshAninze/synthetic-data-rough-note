@@ -1,0 +1,19 @@
+# Conclusion
+
+## Summary of Findings
+
+* **The Problem:** The existing NHS artificial data, while great for privacy, was not suitable for the NHP model due to a lack of meaningful relationships between attributes.
+* **The Solution:** A rule-based data synthesis approach was used to inject two rules, successfully creating these relationships.
+
+---
+
+* **The Result:** The enhanced dataset was validated to confirm the new relationships, making it a reliable and non-disclosive resource for the NHP model.
+* **The Impact:** This work enables the NHP model to produce more accurate demand predictions and provides a foundation for identifying which patients are candidates for a mitigator.
+
+## Future Works
+
+While the rule-based approach was a practical and effective solution, future work could explore using Generative Adversarial Networks (GANs).
+
+* GANs can learn more complex, non-linear relationships that a rule-based system would miss, creating an even more realistic synthetic dataset.
+
+# Any Questions?
