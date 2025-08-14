@@ -16,7 +16,11 @@ The project will use the existing, non-disclosive 10,000-row artificial HES data
 
 The process for enhancing the artificial dataset will follow these key steps:
 
-1.  **Initial Data Validation:** The project began by validating the current state of the artificial data. A correlation matrix was generated in Python, which confirmed the lack of meaningful linear relationships between numerical attributes, thereby justifying the need for this enhancement project.
+1.  **Initial Data Validation:** The project began by generating a correlation matrix in Python to confirm the lack of meaningful linear relationships between numerical attributes. This step provided the clear justification for the data enhancement work.
+
+---
+
+![The Data Before Data Injection](images/bf.png)
 
 ---
 
