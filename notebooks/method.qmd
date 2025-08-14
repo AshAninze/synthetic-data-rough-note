@@ -29,7 +29,7 @@ The project began by generating a correlation matrix in Python to confirm the la
 
 ---
 
-![The Data Before Data Injection](/images/bf.png)
+![The Data Before Data Injection](../images/bf.png)
 
 ---
 
@@ -48,7 +48,7 @@ The final output will be an enhanced artificial HES dataset. The dataset was val
 
 ---
 
-![The Data After Data Injection](/images/af.png)
+![The Data After Data Injection](../images/af.png)
 
 ## The Results
 
