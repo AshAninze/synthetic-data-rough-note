@@ -1,10 +1,6 @@
 project:
   title: "Enhancing Artificial Data for the NHP Model"
-  output-dir: docs
-  resources:
-    - images
 
-#format
 format:
   html:
     theme:
