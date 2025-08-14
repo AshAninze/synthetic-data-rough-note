@@ -12,8 +12,8 @@
 
 ## Future Works
 
-While the rule-based approach was a practical and effective solution, future work could explore using Generative Adversarial Networks (GANs).
+While the rule-based approach was a practical and effective solution, future work could explore using **Generative Adversarial Networks** (GANs).
 
-* GANs can learn more complex, non-linear relationships that a rule-based system would miss, creating an even more realistic synthetic dataset.
+GANs can learn more complex, non-linear relationships that a rule-based system would miss, creating an even more realistic synthetic dataset.
 
 # Any Questions?
