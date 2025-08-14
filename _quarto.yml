@@ -1,15 +1,8 @@
 project:
   title: "Enhancing Artificial Data for the NHP Model"
-  type: website
   output-dir: docs
   resources:
     - images/
-
-website:
-  navbar:
-    right:
-      - text: "GitHub"
-        href: "https://aiwithash.me/synthetic-data-rough-note"
 
 format:
   html:
