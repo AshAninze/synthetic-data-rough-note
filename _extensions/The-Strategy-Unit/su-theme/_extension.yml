@@ -12,6 +12,4 @@ contributes:
       slide-number: false
       auto-animate: true
       footer: |
-        Presentation not yet publicly available.
-        
-#view slides at [the-strategy-unit.github.io/data_science/presentations][ds_presentations]
+        View slides [here](https://aiwithash.me/synthetic-data-rough-note/#/title-slide)

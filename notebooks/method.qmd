@@ -32,3 +32,7 @@ The process for enhancing the artificial dataset will follow these key steps:
 
 
 4.  **Output and Validation:** The final output will be an enhanced artificial HES dataset. This dataset will be validated to confirm that the newly created relationships are present while also ensuring the data remains non-disclosive and suitable for the open-source NHP model.
+
+---
+
+![The Data After Data Injection](/images/af.png)
