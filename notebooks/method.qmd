@@ -39,7 +39,7 @@ Based on the requirements of the NHP demand model,  two key inter-column relatio
 
 * An Ambulance Rule: If AEARRIVALMODE is 1 (arrival by ambulance), then AEATTENDDISP is set to 1 (hospital bed).
 * A Female Rule: If DIAG3_01 is 28 (Obstetric conditions) or 29 (Gynaecological conditions), then SEX is set to 2 (female).
-* Using Python and the Pandas library, a script was developed to create realistic relationships in the artificial dataset
+* Using Python and the Pandas library, a script was developed to create realistic relationships in the artificial dataset.
 
 
 ## Output & Validation 
