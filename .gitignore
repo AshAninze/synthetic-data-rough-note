@@ -93,3 +93,6 @@ venv.bak/
 
 # Python files to ignore
 *.pyc
+
+# Output files
+_quarto.yml
