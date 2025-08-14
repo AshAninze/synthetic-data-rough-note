@@ -1,5 +1,7 @@
 project:
   title: "Enhancing Artificial Data for the NHP Model"
+  resources:
+    - ../docs/
 
 format:
   html:
