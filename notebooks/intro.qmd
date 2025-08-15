@@ -1,11 +1,19 @@
 # Introduction
 
+This document details an internship project focused on exploring and developing synthetic data generation techniques for the New Hospital Programme (NHP) 
+demand prediction model. The primary goal is to address the challenge of data accessibility and privacy, enabling the NHP's open-source model to be truly 
+reproducible, shareable, and evaluable without compromising sensitive real patient data.
+
+The project's primary objective was to inject realistic, multivariate relationships into the data, which were absent from the original dataset. 
+The methodology involved a rule-based data synthesis approach using Python and the Pandas library. 
+
+# Background and Problem Statement
 
 ## The Challenge of Healthcare Data
 
-* Real patient data is sensitive and highly restricted.
-* This makes sharing and collaboration difficult.
-* The NHP model is open source, but the data is not.
+Healthcare data is inherently sensitive and subject to strict confidentiality rules. This makes it difficult to share real patient data for research, 
+development, and collaborative modeling. To overcome this, the NHS has developed an artificial HES dataset. While this dataset successfully protects 
+patient privacy, it lacks the complex, real-world relationships that are essential for training predictive models.
 
 ---
 
