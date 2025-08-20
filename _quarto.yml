@@ -4,6 +4,15 @@ project:
   resources:
     - images/
 
+
+website:
+  navbar:
+    left:
+      - text: "Presentation"
+        href: "presentation.qmd"
+      - text: "Project Report"
+        href: "report.qmd"
+
 format:
   html:
     theme:

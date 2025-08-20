@@ -1,18 +1,21 @@
 # Methodology
 
+The project's approach was a rule-based data enhancement methodology. The goal add key relationships to the existing 10,000-row artificial HES dataset rather than generate a new 
+dataset. The data process was implemented using Python and the Pandas library.
+
 ## Approach
 
-* This project will use a rule-based data synthesis approach to address the limitations of the existing artificial HES data. 
-* Rather than generating a new dataset from scratch, the approach is to add relationships to the existing 10,000-row artificial dataset.
-* This provides a practical solution that fits within the project timeline and adheres to the requirement of not using real HES data.
+The project’s approach was a rule-based data methodology that focused on enhancing the existing artificial HES dataset rather than creating a new one from scratch. This provided a 
+practical and efficient solution that fit within the project timeline and adhered to the essential requirement of not using real patient data.
 
 ## Input Data
 
-* The project will use the existing, non-disclosive A&E 10,000-row artificial HES dataset created by NHS England.
-* The dataset consists of 10,000 rows and 165 attributes.
-* The dataset includes a variety of attributes related to emergency care.
+This project used the existing, non-disclosive A&E 10,000-row artificial HES dataset provided by NHS England. This dataset, which consists of 165 attributes 
+related to emergency care, is used as the starting point for the data enhancement process.
 
 ## Key columns used in this project
+
+The following key columns were chosen based on their clinical relevance and their importance in demand prediction within the NHP model:
 
 * **AEATTENDDISP:** The patient’s discharge status.
 * **AEARRIVALMODE:** How the patient arrived at the facility.
@@ -25,39 +28,45 @@ The process for enhancing the artificial dataset followed these steps
 
 ## Initial Data Validation
 
-The project began by generating a correlation matrix in Python to confirm the lack of meaningful linear relationships between numerical attributes. This step provided the clear justification for the data enhancement.
+The project began by generating a correlation matrix in Python to confirm the lack of meaningful linear relationships between numerical attributes. 
+This provided clear justification for the data enhancement and established a baseline against which the enhanced dataset could be measured. This visulaisation confirmed the 
+lack of relationships in the orginal data.
 
----
 
 ![The Data Before Data Injection](images/bf.png)
 
----
 
 ## Relationship Identification & Enhancement
 
 Based on the requirements of the NHP demand model,  two key inter-column relationships were identified:  
 
-* An Ambulance Rule: If AEARRIVALMODE is 1 (arrival by ambulance), then AEATTENDDISP is set to 1 (hospital bed).
-* A Female Rule: If DIAG3_01 is 28 (Obstetric conditions) or 29 (Gynaecological conditions), then SEX is set to 2 (female).
-* Using Python and the Pandas library, a script was developed to create realistic relationships in the artificial dataset.
+An **Ambulance** Rule: This rule creates a logical relationship between arrival mode and discharge status. If AEARRIVALMODE is 1 (arrival by ambulance), then AEATTENDDISP is set to 1 
+(hospital bed). This simulates a realistic scenario where patients arriving via ambulance are highly likely to be admitted for more serious conditions.
+
+A **Female** Rule: If DIAG3_01 is either 28 (Obstetric conditions) or 29 (Gynaecological conditions), then SEX is set to 2 (female). This corrects an illogical relationship that may 
+have existed in the original, randomly generated data.
+
+
+Using Python and the Pandas library, a script was developed to create realistic relationships in the artificial dataset. The script iteratively checked each row of the dataset and, where 
+applicable, adjusted the values in the target columns to create these realistic, inter-column relationships.
 
 
 ## Output & Validation 
 
-The final output will be an enhanced artificial HES dataset. The dataset was validated to confirm that the newly created relationships were present by generating a new correlation matrix.This confirms that the newly created relationships are present while also ensuring the data remains non-disclosive and suitable for the open-source NHP model.
+The final output will be an enhanced artificial HES dataset.  This new dataset now contains the key inter-column relationships that were missing from the original.The dataset was validated 
+to confirm that the newly created relationships were present by generating a new correlation matrix.This confirms that the newly created relationships are present while also ensuring the 
+data remains non-disclosive and suitable for the open-source NHP model.
 
----
 
 ![The Data After Data Injection](images/af.png)
 
 ## The Results
 
-**Before:**
+**Before Enhancement**
 
-*The initial correlation matrix showed no meaningful relationships.
-*This confirmed the need for data enhancement.
+The initial correlation matrix showed no meaningful linear relationships between the attributes. This confirmed that the original dataset was unsuitable for modeling and justified the need for data enhancement.
 
-**After:**
+**After Enhancement**
 
-*The new correlation matrix confirms that the rules successfully injected relationships.
-*The correlation values for the target columns have significantly increased.
+The new correlation matrix confirms that the rules successfully injected relationships. The correlation values for the target columns have increased. This result provides clear evidence and effectiveness of the project's 
+methodology and its ability to create a functional dataset suitable for the NHP model.

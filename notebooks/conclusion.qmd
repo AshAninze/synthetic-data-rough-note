@@ -5,7 +5,7 @@
 * **The Problem:** The existing NHS artificial data, while great for privacy, was not suitable for the NHP model due to a lack of meaningful relationships between attributes.
 * **The Solution:** A rule-based data synthesis approach was used to inject two rules, successfully creating these relationships.
 
----
+
 
 * **The Result:** The enhanced dataset was validated to confirm the new relationships, making it a reliable and non-disclosive resource for the NHP model.
 * **The Impact:** This work enables the NHP model to produce more accurate demand predictions and provides a foundation for identifying which patients are candidates for a mitigator.
@@ -16,4 +16,20 @@ While the rule-based approach was a practical and effective solution, future wor
 
 GANs can learn more complex, non-linear relationships that a rule-based system would miss, creating an even more realistic synthetic dataset.
 
-# Any Questions?
+---
+
+# Resources
+
+* **New Hospital Project Documentation:** The New Hospital Programme Demand modelling tool documentation [site.](https://connect.strategyunitwm.nhs.uk/nhp/project_information/)
+
+* **NHP GitHub Repository:** The official repository for the NHP demand model, containing the [source code](<https://github.com/The-Strategy-Unit/nhp_model>).
+
+* **NHS England HES Data:** The official website detailing the artificial [data](<https://digital.nhs.uk/services/artificial-data>) project.
+  
+
+* **Synthetic Data Generation Paper:** A research [paper](https://www.sciencedirect.com/science/article/pii/S2001037024002393) detailing various techniques for generating synthetic data in healthcare, including GANs and probabilistic approaches. 
+
+* **Synthetic Data in Medicine:** A research [paper](https://www.sciencedirect.com/science/article/pii/S2001037025001849#) detailing the legal and ethical considerations of using synthetic data, particularly for patient profiling.
+  
+
+* **Characterization of Synthetic Health Data:** A research [paper](https://ieeexplore.ieee.org/document/10016704) detailing rule-based AI models for synthetic data.
