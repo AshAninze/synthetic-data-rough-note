@@ -1,20 +1,59 @@
 # Conclusion
 
+In conclusion, this internship project successfully addressed a critical limitation of the NHS's artificial HES data by transforming a static, non-disclosive dataset into something useable. 
+The rule-based data synthesis methodology proved to be an effective and practical solution, successfully injecting key inter-column relationships that were missing from the original data.
+
+The project's success was confirmed through a comparison of correlation matrices, which visually demonstrated the created relationships in the enhanced dataset. The output is valuable , as 
+it enables more accurate and reliable demand prediction using the NHP model. The work has created a foundation that can be expanded in the future through the exploration of more advanced techniques, 
+such as Generative Adversarial Networks (GANs).
+
 ## Summary of Findings
 
 * **The Problem:** The existing NHS artificial data, while great for privacy, was not suitable for the NHP model due to a lack of meaningful relationships between attributes.
 * **The Solution:** A rule-based data synthesis approach was used to inject two rules, successfully creating these relationships.
-
-
-
 * **The Result:** The enhanced dataset was validated to confirm the new relationships, making it a reliable and non-disclosive resource for the NHP model.
 * **The Impact:** This work enables the NHP model to produce more accurate demand predictions and provides a foundation for identifying which patients are candidates for a mitigator.
 
-## Future Works
+# Future Works
 
-While the rule-based approach was a practical and effective solution, future work could explore using **Generative Adversarial Networks** (GANs).
+While the rule-based approach was a practical and effective solution, future work could explore using **Generative Adversarial Networks** (GANs). As a deep learning-based method for synthetic data 
+generation GANs can learn more complex, non-linear relationships that a rule-based system would miss, creating an even more realistic synthetic dataset.
 
-GANs can learn more complex, non-linear relationships that a rule-based system would miss, creating an even more realistic synthetic dataset.
+Recent studies have found that deep learning methods, including GANs, were used in 72.6% of sources for synthetic data generation in healthcare, with 75.3% of these generators implemented in Python.
+
+## How GANs Generate Synthetic Data
+
+GANs use an adversarial process involving two neural networks, a generator and a discriminator. The generator produces synthetic data, while the discriminator evaluates its reliability by predicting whether the data 
+is real or synthetic. This competitive process forces the generator to produce better realistic data that mimics the statistical properties and data distribution of the real data.
+
+
+## Advantages and Weaknesses of GANs
+
+While GANs appear to be a more robust solution to address data scarcity and privacy problems in healthcare, it is important to consider their advantages and challenges. 
+
+
+### Advantages
+
+* Highly effective at generating privacy-preserving synthetic data, making it harder to identify individuals.
+* Capable of handling high-dimensional and complex data.
+* GANs generate highly realistic data that closely mimics the statistical properties of real data.
+
+
+### Weaknesses
+
+* GANs require significant computational resources and time for training, especially on large and high-dimensional datasets.
+* They can be complex to implement and manage due to their complex architectures and the need for careful hyperparameter tuning.
+* Accurate synthetic data, while useful, may carry a higher risk of re-identification if not carefully managed.
+
+In conclusion, the use of Generative Adversarial Networks (GANs) offers a powerful and versatile approach for generating diverse and high quality synthetic data. 
+This data could be used to train AI models for complex tasks such as hospital demand prediction, which is the ultimate goal for the NHP model.
+
+This is could be an important advancement in the healthcare space, as it provides a path to creating datasets that can potentially replace sensitive HES data. By using non-disclosive synthetic 
+data for model prediction, it not only protects patient privacy but also offers a solution for building models that can be shared and used more widely.
+
+Furthermore, this work provides a foundation for creating customisable synthetic data tailored to the specific needs and patient demographics of individual hospitals. This ability to create 
+fit-for-purpose datasets is crucial for developing accurate and ethical predictive models.
+
 
 ---
 
