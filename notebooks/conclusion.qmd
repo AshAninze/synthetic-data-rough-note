@@ -29,7 +29,8 @@ is real or synthetic. This competitive process forces the generator to produce b
 
 ## Advantages and Weaknesses of GANs
 
-While GANs appear to be a more robust solution to address data scarcity and privacy problems in healthcare, it is important to consider their advantages and challenges. 
+While GANs appear to be a more robust solution to address data scarcity and privacy problems in healthcare, it is important to consider their advantages and challenges. Since developing, 
+training and validating GANs is time consuming, it was not selected as an approach due to the likeliness of it extending past the internship.
 
 
 ### Advantages

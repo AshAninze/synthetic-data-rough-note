@@ -21,7 +21,7 @@ patient privacy, it lacks the complex, real-world relationships that are essenti
 ### Privacy
 
 Synthetic data is crucial for protecting patient confidentiality. Synthetic data are artificially generated to mimic real-world data without compromising the identity of individuals. 
-By ensuring personal identifiable information are completely absent, synthetic data safeguards patient confidentiality. This mtiigates the risk of data misuse or breaches. This allows 
+By ensuring personal identifiable information are completely absent, synthetic data safeguards patient confidentiality. This mitigates the risk of data misuse or breaches. This allows 
 for open sharing and collaboration, eliminating the need for complex and time-consuming data governance approvals and strict access protocols.
 
 ### Accessibility & Reproducibility
@@ -34,9 +34,9 @@ ensures that the model's performance can be consistently validated by the commun
 
 ### Bias Mitigation 
 
-Synthetic data offers a unique opportunity to mitigate bias present in real-world datasets. Real-world data can often contain historical biases, such as the underrepresentation 
+Synthetic data offers a unique opportunity to mitigate bias present in real-world datasets. Real-world data can often contain historical biases, such as the under-representation 
 of certain demographic groups or a lack of data on specific medical conditions. Synthetic data generation addresses the need for training algorithms on unbiased data which is large 
-enough and has the needed statiticical relationships. By providing more balanced datasets, synthetic data can ensure the delivery of fair treatment recommendations across diverse patient populations.
+enough and has the needed statistical relationships. By providing more balanced datasets, synthetic data can ensure the delivery of fair treatment recommendations across diverse patient populations.
 Synthetic data can be used to directly correct biases present in real-world data by, populating unprivileged groups to reduce demographic disparities.
 
 
@@ -44,7 +44,7 @@ Synthetic data can be used to directly correct biases present in real-world data
 
 
 The existing NHS artificial data, while perfect at preserving patient privacy, it does not preserve the complex relationships and dependencies that exist between different attributes in reality. 
-This is a limitation for any predictive demand modeling.
+This is a limitation for any predictive demand modelling.
 
 ## Lost Relationships
 
@@ -56,7 +56,7 @@ The official NHS Digital documentation even explicitly states that the data is n
 
 ## Impact on NHP Model
 
-The National Healthcare Predictor (NHP) model is reliant on multivariate relationships for accurate demand prediction. Without these complex relationships, models trained on the existing artificial 
+The New Hospital Programme (NHP) model is reliant on multivariate relationships for accurate demand prediction. Without these complex relationships, models trained on the existing artificial 
 HES data would be unreliable and inaccurate.
 
 The lack of these relationships presents a significant problem to identifying which patients are candidates for a mitigator, a key function of the model. The inability to simulate real-world 
@@ -68,7 +68,7 @@ interventions makes the output for demand prediction unreliable and invalid, dir
 This report will detail my internship project, which focuses on addressing a limitation in the NHS's artificial data. 
 
 This report will begin by exploring the problem, highlighting how the current artificial dataset, while protecting privacy, lacks the complex, real-world relationships 
-essential for predictive modeling. Next, the solution is presented, detailing the methodology developed to inject these realistic relationships into the data. The results 
+essential for predictive modelling. Next, the solution is presented, detailing the methodology developed to inject these realistic relationships into the data. The results 
 are then examined, using a correlation matrix to visually demonstrate the enhanced dataset.
 
 Finally, the impact of this work will be discussed. The report will conclude by exploring future work and advanced techniques, such as Generative Adversarial Networks (GANs), 

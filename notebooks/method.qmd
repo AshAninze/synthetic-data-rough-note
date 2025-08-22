@@ -1,12 +1,8 @@
 # Methodology
 
-The project's approach was a rule-based data enhancement methodology. The goal add key relationships to the existing 10,000-row artificial HES dataset rather than generate a new 
-dataset. The data process was implemented using Python and the Pandas library.
-
-## Approach
-
-The project’s approach was a rule-based data methodology that focused on enhancing the existing artificial HES dataset rather than creating a new one from scratch. This provided a 
-practical and efficient solution that fit within the project timeline and adhered to the essential requirement of not using real patient data.
+The project's approach was a rule-based data enhancement methodology. The goal was to add key relationships to the existing 10,000-row artificial HES dataset 
+rather than generate a new one from scratch. This provided a practical and efficient solution that fit within the project timeline and abided by the requirement 
+of not using real patient data. The entire process was implemented using Python and the Pandas library.
 
 ## Input Data
 
@@ -28,9 +24,9 @@ The process for enhancing the artificial dataset followed these steps
 
 ## Initial Data Validation
 
-The project began by generating a correlation matrix in Python to confirm the lack of meaningful linear relationships between numerical attributes. 
-This provided clear justification for the data enhancement and established a baseline against which the enhanced dataset could be measured. This visulaisation confirmed the 
-lack of relationships in the orginal data.
+The project began by generating a correlation matrix in Python to confirm the lack of meaningful linear relationships between numerical attributes.
+This provided clear justification for the data enhancement and established a baseline against which the enhanced dataset could be measured. This visualisation confirmed the 
+lack of relationships in the original data.
 
 
 ![The Data Before Data Injection](images/bf.png)
@@ -64,7 +60,7 @@ data remains non-disclosive and suitable for the open-source NHP model.
 
 **Before Enhancement**
 
-The initial correlation matrix showed no meaningful linear relationships between the attributes. This confirmed that the original dataset was unsuitable for modeling and justified the need for data enhancement.
+The initial correlation matrix showed no meaningful linear relationships between the attributes. This confirmed that the original dataset was unsuitable for modelling and justified the need for data enhancement.
 
 **After Enhancement**
 
