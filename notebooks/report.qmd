@@ -2,9 +2,9 @@
 title: "Synthetic Data for the NHP Model"
 subtitle: "An Internship Project at The Strategy Unit, NHS"
 author: "[Ashionye Aninze](mailto:ashionye.aninze@nhs.net)"
-date: 2025-08-14 
+date: 2025-08-22 
 date-format: "MMM D, YYYY"
-format: su-theme-revealjs
+format: html
 ---
 
 {{< include intro.qmd >}}
